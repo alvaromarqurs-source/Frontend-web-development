@@ -1,41 +1,57 @@
 # 🌐 Frontend Web Development
 
-Repositório criado para armazenar meus estudos, exercícios e projetos relacionados ao desenvolvimento web front-end.
+Repositório dedicado aos meus estudos em **Desenvolvimento Web Front-end**, reunindo exercícios, atividades práticas e projetos desenvolvidos durante minha aprendizagem.
 
-## 📚 Sobre o projeto
+O objetivo deste repositório é acompanhar minha evolução, colocar em prática os conceitos aprendidos e construir uma base sólida em desenvolvimento web.
 
-Este repositório acompanha minha evolução no aprendizado de desenvolvimento web, reunindo atividades práticas, exercícios e projetos desenvolvidos durante meus estudos.
+---
 
-O objetivo é colocar em prática os conceitos aprendidos e construir uma base sólida para atuar na área de tecnologia.
+## 📚 Conteúdo
 
-Aula 02 - Introdução ao html.
-Aula 03 - Tabelas, link e imagem. html semântico.
-Aula 04 - Div, diretórios e formulários.
-Aula 05 - Formulários e Recursos Multimídia.
-Aula 06 - Introdução ao css.
+As atividades estão organizadas por aulas, acompanhando a evolução dos conteúdos estudados.
 
+| Aula | Conteúdo |
+|------|----------|
+| 📘 **Aula 02** | Introdução ao HTML |
+| 📘 **Aula 03** | Tabelas, links, imagens e HTML Semântico |
+| 📘 **Aula 04** | Divs, diretórios e formulários |
+| 📘 **Aula 05** | Formulários e recursos multimídia |
+| 🎨 **Aula 06** | Introdução ao CSS |
 
-## 🛠️ Tecnologias
+> 🚧 O conteúdo será atualizado conforme novas aulas e atividades forem desenvolvidas.
 
-As principais tecnologias estudadas neste repositório incluem:
+---
 
-- HTML5
-- CSS3
-- JavaScript
-- Git e GitHub
+## 🛠️ Tecnologias e ferramentas
 
-> Outras tecnologias serão adicionadas conforme o avanço dos estudos.
+Durante os estudos, estou utilizando:
 
-## 📁 Organização
+- **HTML5** — Estruturação de páginas web
+- **CSS3** — Estilização e apresentação
+- **JavaScript** — Interatividade e lógica para páginas web
+- **Git** — Controle de versão
+- **GitHub** — Hospedagem e gerenciamento do código
 
-O conteúdo está organizado por aulas e atividades:
+---
+
+## 📁 Organização do repositório
 
 ```text
 Frontend-web-development/
 │
-├── Aula01/
 ├── Aula02/
+│   └── ...
+│
 ├── Aula03/
-├── ...
+│   └── ...
+│
+├── Aula04/
+│   └── ...
+│
+├── Aula05/
+│   └── ...
+│
+├── Aula06/
+│   └── ...
 │
 └── README.md
