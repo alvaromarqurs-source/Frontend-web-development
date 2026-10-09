@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conheça ideias, aplicações e possibilidades da tecnologia e da inteligência artificial.">
+    <title>Nexo Tech | Tecnologia e Inteligência Artificial</title>
+    <link rel="stylesheet" href="./estilo2.css">
+</head>
+<body>
+    <header class="cabecalho" id="inicio">
+        <div class="container cabecalho-conteudo">
+            <a class="logo" href="#inicio" aria-label="Nexo Tech - início">NEXO<span>TECH</span></a>
+            <nav class="menu" aria-label="Menu principal">
+                <a href="#sobre">Sobre</a>
+                <a href="#destaques">Destaques</a>
+                <a href="#participar">Participar</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="sobre">
+            <div class="container hero-conteudo">
+                <p class="etiqueta">TECNOLOGIA • INOVAÇÃO • FUTURO</p>
+                <h1>Ideias inteligentes.<br><span>Possibilidades infinitas.</span></h1>
+                <p class="hero-descricao">
+                    Um espaço para descobrir como a tecnologia e a inteligência artificial
+                    podem transformar a maneira como aprendemos, criamos e resolvemos problemas.
+                </p>
+                <a class="botao botao-principal" href="#destaques">Explore as possibilidades <span aria-hidden="true">↗</span></a>
+                <div class="hero-nota">
+                    <span class="ponto" aria-hidden="true"></span>
+                    Conhecimento que conecta pessoas e inovação.
+                </div>
+            </div>
+            <div class="hero-grafismo" aria-hidden="true">
+                <div class="orb orb-um"></div>
+                <div class="orb orb-dois"></div>
+                <div class="orb orb-tres"></div>
+                <div class="linha linha-um"></div>
+                <div class="linha linha-dois"></div>
+                <div class="circulo-central">AI<span>+</span></div>
+            </div>
+        </section>
+
+        <section class="destaques secao" id="destaques">
+            <div class="container">
+                <div class="cabecalho-secao">
+                    <div>
+                        <p class="etiqueta">UM UNIVERSO EM EVOLUÇÃO</p>
+                        <h2>Explore o que vem <span>pela frente.</span></h2>
+                    </div>
+                    <p class="texto-secao">Três áreas que ajudam a entender o impacto da tecnologia no nosso dia a dia.</p>
+                </div>
+
+                <div class="cards">
+                    <article class="card">
+                        <div class="icone-card icone-roxo" aria-hidden="true">✳</div>
+                        <p class="numero-card">01 / INTELIGÊNCIA</p>
+                        <h3>Inteligência Artificial</h3>
+                        <p>Conheça sistemas capazes de identificar padrões, apoiar decisões e auxiliar na criação de novas soluções.</p>
+                        <a href="#participar" class="link-card">Quero aprender <span aria-hidden="true">↗</span></a>
+                    </article>
+
+                    <article class="card card-destaque">
+                        <div class="icone-card icone-verde" aria-hidden="true">⌘</div>
+                        <p class="numero-card">02 / DESENVOLVIMENTO</p>
+                        <h3>Programação</h3>
+                        <p>Transforme ideias em aplicações por meio da lógica, de linguagens de programação e do desenvolvimento web.</p>
+                        <a href="#participar" class="link-card">Quero construir <span aria-hidden="true">↗</span></a>
+                    </article>
+
+                    <article class="card">
+                        <div class="icone-card icone-azul" aria-hidden="true">◈</div>
+                        <p class="numero-card">03 / AMANHÃ</p>
+                        <h3>Inovação digital</h3>
+                        <p>Explore novas ferramentas e formas de resolver desafios com criatividade, colaboração e responsabilidade.</p>
+                        <a href="#participar" class="link-card">Ver possibilidades <span aria-hidden="true">↗</span></a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="participar secao" id="participar">
+            <div class="container participar-conteudo">
+                <div>
+                    <p class="etiqueta">O PRÓXIMO PASSO COMEÇA AQUI</p>
+                    <h2>Curiosidade é o início de toda <span>descoberta.</span></h2>
+                    <p class="participar-descricao">Quer continuar explorando tecnologia e IA? Deixe uma mensagem demonstrativa e escolha o assunto que mais desperta seu interesse.</p>
+                </div>
+                <form class="formulario" action="#mensagem-enviada" method="get">
+                    <label for="nome">Como podemos chamar você?</label>
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+
+                    <label for="interesse">Qual tema você quer explorar?</label>
+                    <select id="interesse" name="interesse" required>
+                        <option value="" disabled selected>Selecione uma opção</option>
+                        <option value="ia">Inteligência Artificial</option>
+                        <option value="programacao">Programação</option>
+                        <option value="inovacao">Inovação digital</option>
+                    </select>
+
+                    <button class="botao botao-principal botao-formulario" type="submit">Enviar interesse <span aria-hidden="true">↗</span></button>
+                    <p class="aviso-formulario">Demonstração acadêmica: os dados não são enviados a um servidor.</p>
+                </form>
+            </div>
+        </section>
+        <section class="mensagem-enviada" id="mensagem-enviada" aria-live="polite">
+            <div class="container">
+                <p>Obrigado pela participação! Este formulário é apenas demonstrativo e não armazena informações.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="container rodape-conteudo">
+            <a class="logo logo-rodape" href="#inicio">NEXO<span>TECH</span></a>
+            <p>Projeto acadêmico • Desenvolvimento Front-End para Web</p>
+            <a href="#inicio" class="voltar-topo">Voltar ao topo ↑</a>
+        </div>
+        <div class="container rodape-final">
+            <span>Projeto 2 — Interface Express</span>
+            <span>HTML5 + CSS3 + curiosidade</span>
+        </div>
+    </footer>
+</body>
+</html>
