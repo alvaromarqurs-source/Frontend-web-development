@@ -17,8 +17,6 @@ Landing page sobre tecnologia, programação e inteligência artificial. A pági
 
 - O projeto continua usando um arquivo CSS externo para organizar os estilos separadamente do HTML.
 
-> **Atenção:** o enunciado original pede que o CSS fique em `css/estilo.css`. A organização atual funciona com `estilo.css` na pasta principal, mas, para seguir exatamente o requisito do professor, coloque o arquivo novamente dentro da pasta `css` e altere o link para `./css/estilo.css`.
-
 ## Estrutura atual dos arquivos
 
 ```text
@@ -74,17 +72,7 @@ Para documentar corretamente a atividade, altere os valores dessas propriedades 
 3. Teste os links do menu, os efeitos ao passar o mouse e a adaptação da página ao reduzir a largura da janela.
 4. Teste o formulário demonstrativo. Ele não envia nem armazena dados em um servidor.
 
-## Checklist antes da entrega
 
-- [ ] Confirmar a organização de arquivos exigida pelo professor.
-- [ ] Testar a página em computador e em tela estreita.
-- [ ] Alterar e testar três propriedades CSS novas.
-- [ ] Manter pelo menos duas propriedades novas no projeto.
-- [ ] Registrar no README os resultados observados nos testes.
-- [ ] Fazer uma captura de tela da página aberta no navegador.
-- [ ] Conferir que consigo explicar as principais escolhas de HTML e CSS.
-
----
 
 **Projeto 2 — Interface Express | Desenvolvimento Front-End para Web | 2026/2**
 
