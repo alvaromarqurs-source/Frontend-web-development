@@ -2,77 +2,74 @@
 
 Projeto acadêmico desenvolvido para a atividade **Projeto 2 — Interface Express: Do HTML ao CSS com Inteligência Artificial**, da disciplina Desenvolvimento Front-End para Web.
 
-## Tema do projeto
+**Integrante:** Alvaro Marques de Araujo
 
-Landing page sobre tecnologia, programação e inteligência artificial. A página apresenta o tema, três cards informativos e um formulário demonstrativo, usando uma identidade visual escura com detalhes em roxo e verde.
+## 💻 Sobre o projeto
 
-## Alterações realizadas
+O **Nexo Tech** é uma landing page criada para apresentar conceitos de tecnologia, programação e Inteligência Artificial. O projeto possui uma interface moderna, com tema escuro e detalhes em roxo, verde e azul, buscando proporcionar uma experiência visual organizada e agradável.
 
-- O arquivo `estilo.css` foi retirado da pasta `css` e colocado na mesma pasta que o `index.html`.
-- O caminho do CSS no HTML foi atualizado para apontar para o arquivo na pasta principal:
+## 🎯 Funcionalidades
 
-  ```html
-  <link rel="stylesheet" href="./estilo.css">
-  ```
+- **Cabeçalho:** logotipo e menu de navegação com links para as seções da página.
+- **Apresentação:** introdução ao tema de tecnologia e IA, com botão de navegação.
+- **Cards informativos:** conteúdos sobre Inteligência Artificial, Programação e Inovação Digital.
+- **Formulário demonstrativo:** campo para nome e seleção de tema de interesse.
+- **Mensagem de confirmação:** exibição de uma mensagem após a interação com o formulário.
+- **Rodapé:** identificação do projeto acadêmico e link para voltar ao topo.
 
-- O projeto continua usando um arquivo CSS externo para organizar os estilos separadamente do HTML.
+## 🛠️ Tecnologias utilizadas
 
-## Estrutura atual dos arquivos
+- **HTML5:** estruturação do conteúdo com elementos semânticos.
+- **CSS3:** estilização, cores, tipografia, espaçamentos e efeitos visuais.
+- **Flexbox:** organização e alinhamento dos elementos.
+- **CSS Grid:** criação do layout dos cards e da seção de participação.
+- **Media Queries:** adaptação da página para diferentes tamanhos de tela.
+
+## 🎨 Recursos de CSS
+
+- Variáveis CSS para organizar cores e outros valores visuais.
+- `box-shadow` para criar profundidade e efeitos de brilho.
+- `clamp()` para ajustar o tamanho dos títulos conforme a tela.
+- `backdrop-filter` para aplicar desfoque ao fundo do cabeçalho.
+- `:hover` para adicionar efeitos ao passar o mouse.
+- `:focus-visible` para destacar elementos durante a navegação por teclado.
+- `transition` e `transform` para criar animações e movimentos suaves.
+- `linear-gradient()` e `radial-gradient()` para compor os fundos.
+- `@media` para responsividade e preferência por movimento reduzido.
+
+## 📁 Estrutura dos arquivos
 
 ```text
-projeto2_interface_express/
+projeto2(html)/
 ├── index.html
-├── estilo.css
+├── estilo2.css
 └── README.md
 ```
 
-## Conteúdo da página
+O arquivo HTML utiliza o seguinte caminho para carregar o CSS:
 
-- **Cabeçalho:** nome do projeto e menu com links internos.
-- **Apresentação:** título, texto explicativo e botão de chamada para ação.
-- **Destaques:** três cards sobre Inteligência Artificial, Programação e Inovação Digital.
-- **Participação:** formulário demonstrativo para selecionar um tema de interesse.
-- **Rodapé:** identificação da atividade acadêmica.
+```html
+<link rel="stylesheet" href="./estilo2.css">
+```
 
-## Recursos de HTML e CSS utilizados
+**Importante:** mantenha os dois arquivos na mesma pasta para que a estilização seja carregada corretamente.
 
-- HTML5 semântico, com elementos como `header`, `nav`, `main`, `section`, `article` e `footer`.
-- CSS externo conectado ao HTML por meio da tag `link`.
-- Classes, identificador e seletores hierárquicos.
-- Cores, fontes, fundos, bordas, margens, espaçamentos e dimensões.
-- CSS Grid e Flexbox para organizar o conteúdo.
-- Estados `:hover` e `:focus-visible`.
-- Transições e transformações simples.
-- Media queries para adaptar a interface a telas menores.
+## ▶️ Como executar
 
-## Propriedades CSS novas exploradas
+1. Baixe ou clone o repositório.
+2. Mantenha `index.html` e `estilo2.css` na mesma pasta.
+3. Abra o arquivo `index.html` em um navegador atualizado.
+4. Explore o menu, os cards, os efeitos visuais e o formulário demonstrativo.
 
-| Propriedade ou recurso | Aplicação | Finalidade |
-|---|---|---|
-| `box-shadow` | Botão principal e elemento gráfico central | Criar profundidade e efeito de brilho. |
-| `clamp()` | Títulos da página | Ajustar o tamanho da fonte de forma flexível, com limites mínimo e máximo. |
-| `backdrop-filter` | Cabeçalho | Aplicar desfoque ao conteúdo que fica atrás do cabeçalho translúcido. |
+## 📝 Observação sobre o formulário
 
-Para documentar corretamente a atividade, altere os valores dessas propriedades no arquivo CSS, compare os resultados no navegador e registre suas próprias observações.
+O formulário tem finalidade exclusivamente demonstrativa. Ele não envia os dados para um servidor nem armazena as informações preenchidas.
 
-## Prompts utilizados como apoio
+## 📚 Objetivo acadêmico
 
-**Para gerar a base HTML:**
+O projeto tem como objetivo praticar a criação de páginas web com HTML5 e CSS3, explorando estrutura semântica, organização de layouts, estilização, interatividade visual e responsividade, com apoio da Inteligência Artificial durante o processo de aprendizagem.
 
-> Crie uma landing page semântica em HTML5 sobre tecnologia e inteligência artificial. Inclua cabeçalho com menu de links internos, apresentação, três cards informativos, formulário demonstrativo e rodapé. Use nomes de classes claros e não inclua CSS nem JavaScript.
-
-**Para aprender propriedades CSS:**
-
-> Sugira três propriedades ou recursos CSS, explique cada um em linguagem simples, mostre um exemplo pequeno e proponha valores para eu alterar e observar o resultado. Não reescreva o projeto inteiro.
-
-## Como abrir
-
-1. Mantenha `index.html` e `estilo.css` na mesma pasta.
-2. Abra `index.html` em um navegador atualizado.
-3. Teste os links do menu, os efeitos ao passar o mouse e a adaptação da página ao reduzir a largura da janela.
-4. Teste o formulário demonstrativo. Ele não envia nem armazena dados em um servidor.
-
-
+---
 
 **Projeto 2 — Interface Express | Desenvolvimento Front-End para Web | 2026/2**
 
