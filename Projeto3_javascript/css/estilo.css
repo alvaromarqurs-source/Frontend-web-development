@@ -1,0 +1,271 @@
+/* ==========================================================
+   Projeto 3 – Painel Interativo
+   Paleta: azul-noite + turquesa de destaque.
+   Os temas são controlados por variáveis CSS:
+   o tema escuro é ativado pela classe .tema-escuro no <body>.
+   ========================================================== */
+
+/* ---------- Tema claro (padrão) ---------- */
+:root {
+  --fundo: #f4f7fb;
+  --superficie: #ffffff;
+  --texto: #0f172a;
+  --texto-suave: #475569;
+  --borda: #d5dde9;
+  --primaria: #0f766e;
+  --primaria-hover: #115e59;
+  --texto-sobre-primaria: #ffffff;
+  --destaque: #e0f5f2;
+  --erro-fundo: #fff1f2;
+  --erro-borda: #e11d48;
+  --erro-texto: #881337;
+  --foco: #14b8a6;
+  --sombra: rgba(15, 118, 110, 0.35);
+}
+
+/* ---------- Tema escuro ---------- */
+body.tema-escuro {
+  --fundo: #0b1020;
+  --superficie: #131a2e;
+  --texto: #e8ecf6;
+  --texto-suave: #9aa7c4;
+  --borda: #26304d;
+  --primaria: #2dd4bf;
+  --primaria-hover: #5eead4;
+  --texto-sobre-primaria: #04201c;
+  --destaque: #16233a;
+  --erro-fundo: #2a1019;
+  --erro-borda: #fb7185;
+  --erro-texto: #fecdd3;
+  --foco: #5eead4;
+  --sombra: rgba(0, 0, 0, 0.6);
+}
+
+/* ---------- Base ---------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--texto);
+  background: var(--fundo);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1, h2 {
+  line-height: 1.15;
+  margin: 0;
+}
+
+/* ---------- Classes reutilizáveis ---------- */
+.container {
+  width: 100%;
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* ---------- Cabeçalho ---------- */
+.cabecalho {
+  background: var(--primaria);
+  color: var(--texto-sobre-primaria);
+  padding: 0.9rem 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cabecalho__conteudo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.marca {
+  margin: 0;
+  font-weight: 700;
+  font-size: 1.05rem;
+  letter-spacing: 0.02em;
+}
+
+/* ---------- Apresentação ---------- */
+.principal {
+  flex: 1;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.apresentacao h1 {
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--primaria);
+}
+
+.apresentacao__texto {
+  margin-top: 1.25rem;
+  font-size: 1.1rem;
+  color: var(--texto-suave);
+  max-width: 40ch;
+}
+
+/* ---------- Painel ---------- */
+.painel {
+  background: var(--superficie);
+  border: 1px solid var(--borda);
+  border-radius: 16px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  box-shadow: 0 12px 32px -16px var(--sombra);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.painel h2 {
+  font-size: 1.35rem;
+}
+
+/* ---------- Formulário ---------- */
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.campo label {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.campo input,
+.campo select {
+  font: inherit;
+  color: var(--texto);
+  background: var(--fundo);
+  border: 2px solid var(--borda);
+  border-radius: 10px;
+  padding: 0.7rem 0.9rem;
+  transition: border-color 0.2s ease, background-color 0.3s ease;
+}
+
+.campo input:focus,
+.campo select:focus,
+.botao:focus-visible {
+  outline: 3px solid var(--foco);
+  outline-offset: 2px;
+}
+
+.campo input:focus,
+.campo select:focus {
+  border-color: var(--primaria);
+}
+
+/* Campo marcado como inválido pelo JavaScript */
+.campo input.campo--invalido {
+  border-color: var(--erro-borda);
+}
+
+/* ---------- Botões ---------- */
+.botao {
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 0.75rem 1.25rem;
+  border: 2px solid transparent;
+  transition: background-color 0.2s ease, transform 0.1s ease, color 0.2s ease;
+}
+
+.botao:active {
+  transform: translateY(1px);
+}
+
+.botao--primario {
+  background: var(--primaria);
+  color: var(--texto-sobre-primaria);
+}
+
+.botao--primario:hover {
+  background: var(--primaria-hover);
+}
+
+.botao--secundario {
+  background: transparent;
+  color: var(--texto-sobre-primaria);
+  border-color: var(--texto-sobre-primaria);
+  padding: 0.5rem 1rem;
+}
+
+.botao--secundario:hover {
+  background: var(--texto-sobre-primaria);
+  color: var(--primaria);
+}
+
+/* ---------- Área de resultado ---------- */
+.resultado {
+  background: var(--destaque);
+  border-left: 5px solid var(--primaria);
+  border-radius: 10px;
+  padding: 1rem 1.1rem;
+  color: var(--texto);
+  min-height: 4.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.resultado--vazio {
+  color: var(--texto-suave);
+}
+
+.resultado--erro {
+  background: var(--erro-fundo);
+  border-left-color: var(--erro-borda);
+  color: var(--erro-texto);
+}
+
+/* ---------- Rodapé ---------- */
+.rodape {
+  border-top: 1px solid var(--borda);
+  padding: 1.25rem 0;
+  font-size: 0.9rem;
+  color: var(--texto-suave);
+  text-align: center;
+}
+
+.rodape p {
+  margin: 0;
+}
+
+/* ---------- Media query: telas menores ---------- */
+@media (max-width: 720px) {
+  .principal {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding-top: 2rem;
+  }
+
+  .painel {
+    padding: 1.25rem;
+  }
+
+  .botao--primario {
+    width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+  }
+}
