@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Descubra seu caminho no Front-End</title>
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+  <header class="cabecalho">
+    <div class="container cabecalho__conteudo">
+      <p class="marca">Front-End Web</p>
+      <button type="button" id="btnTema" class="botao botao--secundario" aria-pressed="false">
+        Alterar tema
+      </button>
+    </div>
+  </header>
+
+  <main class="container principal">
+
+    <section class="apresentacao">
+      <h1>Descubra seu caminho no Front-End</h1>
+      <p class="apresentacao__texto">
+        Diga seu nome, escolha uma área de interesse e receba uma orientação
+        para dar o próximo passo nos estudos.
+      </p>
+    </section>
+
+    <section class="painel" aria-labelledby="titulo-painel">
+      <h2 id="titulo-painel">Monte sua orientação</h2>
+
+      <div class="campo">
+        <label for="nome">Seu nome</label>
+        <input type="text" id="nome" name="nome" placeholder="Ex.: Ana" autocomplete="given-name">
+      </div>
+
+      <div class="campo">
+        <label for="interesse">Área de interesse</label>
+        <select id="interesse" name="interesse">
+          <option value="html">HTML</option>
+          <option value="css">CSS</option>
+          <option value="javascript">JavaScript</option>
+        </select>
+      </div>
+
+      <button type="button" id="btnGerar" class="botao botao--primario">
+        Gerar orientação
+      </button>
+
+      <div id="resultado" class="resultado" role="status" aria-live="polite">
+        Sua orientação vai aparecer aqui.
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="rodape">
+    <div class="container">
+      <p>Projeto 3 – Painel Interativo com JavaScript · Desenvolvimento Front-End para Web · 2026/2</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
