@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Viewport: faz a página se ajustar à largura real do celular -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Vitrine Tech: oficinas fictícias de HTML, CSS e JavaScript." />
+    <title>Vitrine Tech | Projeto 4 – Bootstrap</title>
+
+    <!-- Bootstrap 5.3.8 por CDN (mesma versão usada nos exemplos de aula) -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="bg-light">
+    <!-- CABEÇALHO: título e breve apresentação -->
+    <header id="topo" class="bg-primary text-white text-center py-4">
+      <div class="container p-3">
+        <h1 class="mb-3">Vitrine Tech</h1>
+        <p class="mb-3">
+          Uma vitrine de oficinas fictícias para quem está começando em
+          desenvolvimento web: estrutura com HTML, estilo com CSS e
+          interatividade com JavaScript.
+        </p>
+        <a class="btn btn-success" href="#oficinas">Ver oficinas</a>
+      </div>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="container py-4">
+      <section id="oficinas" aria-labelledby="titulo-oficinas">
+        <h2 id="titulo-oficinas" class="text-center text-primary mb-3">
+          Oficinas em destaque
+        </h2>
+        <p class="text-center mb-3">
+          Cada botão abre a documentação oficial do tema (MDN Web Docs).
+        </p>
+
+        <!-- Linha com espaçamento g-4 entre os cards -->
+        <div class="row g-4">
+          <!-- Celular: 1 por linha | Tablet: 2 por linha | Computador: 3 por linha -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="card h-100 shadow-sm border rounded">
+              <div class="card-body text-start">
+                <span class="badge text-bg-primary mb-3">HTML</span>
+                <h3 class="card-title h5 text-primary fw-semibold">
+                  Oficina de HTML Semântico
+                </h3>
+                <p class="card-text">
+                  Aprenda a montar a estrutura de uma página com cabeçalho,
+                  conteúdo principal, seções e rodapé.
+                </p>
+                <div class="d-grid">
+                  <a
+                    class="btn btn-primary"
+                    href="https://developer.mozilla.org/pt-BR/docs/Web/HTML"
+                    target="_blank"
+                    rel="noopener"
+                    >Saber mais sobre HTML</a
+                  >
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="card h-100 shadow-sm border rounded">
+              <div class="card-body text-start">
+                <span class="badge text-bg-primary mb-3">CSS</span>
+                <h3 class="card-title h5 text-primary fw-semibold">
+                  Oficina de Layout com Bootstrap
+                </h3>
+                <p class="card-text">
+                  Monte páginas responsivas usando grid, cards, cores e
+                  espaçamentos prontos do Bootstrap.
+                </p>
+                <div class="d-grid">
+                  <a
+                    class="btn btn-primary"
+                    href="https://developer.mozilla.org/pt-BR/docs/Web/CSS"
+                    target="_blank"
+                    rel="noopener"
+                    >Saber mais sobre CSS</a
+                  >
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="card h-100 shadow-sm border rounded">
+              <div class="card-body text-start">
+                <span class="badge text-bg-primary mb-3">JavaScript</span>
+                <h3 class="card-title h5 text-primary fw-semibold">
+                  Oficina de JavaScript Inicial
+                </h3>
+                <p class="card-text">
+                  Dê vida à página com eventos, condições e repetições
+                  para responder às ações de quem a usa.
+                </p>
+                <div class="d-grid">
+                  <a
+                    class="btn btn-primary"
+                    href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript"
+                    target="_blank"
+                    rel="noopener"
+                    >Saber mais sobre JavaScript</a
+                  >
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- DESAFIO DE EXPLORAÇÃO -->
+      <section
+        id="aprendemos"
+        class="bg-white border rounded shadow-sm p-3 mt-4 text-start"
+        aria-labelledby="titulo-aprendemos"
+      >
+        <h2 id="titulo-aprendemos" class="text-primary mb-3">O que aprendemos</h2>
+        <p class="mb-3">
+          Pesquisamos duas classes do Bootstrap que ainda não tinham sido
+          trabalhadas em aula:
+        </p>
+
+        <h3 class="h5 fw-semibold">1. <code>fw-semibold</code></h3>
+        <ul class="mb-3">
+          <li>
+            <strong>Onde usamos:</strong> nos títulos dos três cards
+            (<code>h3.card-title</code>).
+          </li>
+          <li>
+            <strong>Efeito:</strong> aplica <code>font-weight: 600</code>, um
+            peso entre o normal e o negrito, deixando o título mais forte sem
+            ficar pesado demais. Para ver a diferença, é só remover a classe
+            e comparar.
+          </li>
+        </ul>
+
+        <h3 class="h5 fw-semibold">2. <code>d-grid</code></h3>
+        <ul class="mb-3">
+          <li>
+            <strong>Onde usamos:</strong> na <code>div</code> que envolve o
+            botão de cada card.
+          </li>
+          <li>
+            <strong>Efeito:</strong> aplica <code>display: grid</code>, e o
+            botão passa a ocupar toda a largura do card em vez de ficar do
+            tamanho do texto.
+          </li>
+        </ul>
+
+        <a class="btn btn-outline-primary" href="#topo">Voltar ao topo</a>
+      </section>
+    </main>
+
+    <!-- RODAPÉ: nome completo e RGM dos integrantes (PREENCHER) -->
+    <footer class="bg-dark text-white text-center py-4 mt-4">
+      <div class="container">
+        <p class="mb-3">Projeto 4 – Interface Responsiva com Bootstrap · Desenvolvimento Front-End para Web</p>
+        <!-- Remova as linhas dos integrantes que não existirem -->
+        <ul class="list-unstyled mb-0">
+          <li>[Alvaro Marques de Araujo] – RGM: [47477270]</li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
