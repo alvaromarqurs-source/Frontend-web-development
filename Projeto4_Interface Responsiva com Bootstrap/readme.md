@@ -63,8 +63,4 @@ Projeto-4/
 
 RGM: 47477270
 
-## 🎓 Curso
-
-Desenvolvimento Front-End para Web
-
 **Projeto 4 – Interface Responsiva com Bootstrap**
