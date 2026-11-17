@@ -257,18 +257,6 @@ Essa evolução aparece também no código: os primeiros exemplos têm poucas li
 
 ---
 
-## 🔮 Próximos passos
-
-O repositório continuará recebendo atualizações conforme o curso avançar. Ideias de evolução, ainda **não implementadas**:
-
-- [ ] Adicionar as próximas aulas e projetos da disciplina.
-- [ ] Ampliar os estudos de JavaScript e manipulação do DOM.
-- [ ] Tornar o layout da Aula 07 responsivo (hoje usa largura fixa).
-- [ ] Publicar os projetos no GitHub Pages para visualização online.
-- [ ] Padronizar a nomenclatura de pastas e arquivos nas próximas atividades.
-
----
-
 ## 👤 Autor
 
 **Alvaro Marques de Araujo**
